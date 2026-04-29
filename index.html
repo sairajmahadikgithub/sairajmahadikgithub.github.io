@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sairaj Pratap Mahadik | MCA Student & Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>SPM<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <a href="image/Sairaj_Mahadik_Resume.pdf" download class="btn-resume">
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">
+          <span class="badge-word" style="--i:0">Open</span>
+          <span class="badge-word" style="--i:1">to</span>
+          <span class="badge-word" style="--i:2">Full-Time</span>
+          <span class="badge-word badge-highlight" style="--i:3">&amp;</span>
+          <span class="badge-word badge-highlight" style="--i:4">Internship</span>
+          <span class="badge-word" style="--i:5">Roles</span>
+        </span>
+        <span class="badge-sparkle">✦</span>
+      </div>
+      <h1 class="hero-name">
+        Hi, I'm <span class="gradient-text" id="heroName">Sairaj Mahadik</span>
+      </h1>
+      <div class="hero-role">
+        <span>I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-intro">
+        MCA student at Yashoda Technical Campus, Satara. I build interactive web apps, AI assistants, and real-time platforms. 
+        BCA graduate with 9.38 CGPA — passionate about clean code and impactful software.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/sairajmahadikgithub" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sairaj-mahadik/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sairajmahadik2003@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919307293998" aria-label="Phone"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-ring ring1"></div>
+        <div class="avatar-ring ring2"></div>
+        <div class="avatar-ring ring3"></div>
+        <div class="hero-avatar">
+          <img src="image/s_M.png" alt="Sairaj Pratap Mahadik" onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Sairaj&backgroundColor=1a1a1a'" />
+        </div>
+        <div class="floating-badge badge-react"><i class="fab fa-js-square"></i></div>
+        <div class="floating-badge badge-node"><i class="fab fa-python"></i></div>
+        <div class="floating-badge badge-python"><i class="fas fa-database"></i></div>
+        <div class="floating-badge badge-aws"><i class="fab fa-html5"></i></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// about me</span>
+        <h2>Who I Am</h2>
+        <p>A developer who loves turning ideas into reality</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm <strong>Sairaj Pratap Mahadik</strong>, an MCA student at Yashoda Technical Campus, Satara. I completed my BCA from Dhananjaya Gadgil College of Commerce with a stellar <strong>9.38 CGPA</strong>.</p>
+          <p>I specialize in building web applications using HTML, CSS, JavaScript, and Python. I'm also a <strong>Generative AI Developer</strong> — creating AI-powered tools, graphics, posters, and content using cutting-edge models like ChatGPT, Midjourney, and DALL·E.</p>
+          <p>I type at <strong>40 WPM</strong>, hold multiple HackerRank certifications, and have won coding competitions at the college level. Always learning, always building.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="938" data-decimal="true">0.00</span><span>/10</span>
+              <span class="stat-label">BCA CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="7">0</span><span>+</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="4">0</span><span>+</span>
+              <span class="stat-label">Awards</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details reveal">
+          <div class="detail-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4>Current Education</h4>
+              <p>MCA — Yashoda Technical Campus</p>
+              <span>Satara · Apr 2027 (Sem I: 69.75%)</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-university"></i>
+            <div>
+              <h4>Previous Education</h4>
+              <p>BCA — DGCC, Satara</p>
+              <span>CGPA: 9.38 · 79.61% · 2021–2024</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Satara, Maharashtra</p>
+              <span>415002 · Open to Remote</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-heart"></i>
+            <div>
+              <h4>Interests</h4>
+              <p>AI/ML, Web Development</p>
+              <span>DSA, Open Source, Digital Marketing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// projects</span>
+        <h2>My Work</h2>
+        <p>Things I've built that I'm proud of</p>
+      </div>
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal" data-category="ai">
+          <div class="project-img">
+            <img src="image/va.png" alt="Conversational AI Assistant" />
+            <div class="project-overlay"><span class="project-category">AI / Voice</span></div>
+          </div>
+          <div class="project-body">
+            <h3>Conversational AI Assistant</h3>
+            <p>Interactive virtual assistant with voice-command functionality, improving user engagement through natural language processing and text-to-speech responses.</p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Speech Recognition</span><span>ML</span><span>TTS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sairajmahadikgithub.github.io/virtual_assistant/" target="_blank" class="btn-live-center"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <img src="image/set.png" alt="Smart Expense Tracker" />
+            <div class="project-overlay"><span class="project-category">Web App</span></div>
+          </div>
+          <div class="project-body">
+            <h3>Smart Expense Tracker</h3>
+            <p>Web app to track expenses, budgets, and visual analytics. Features currency formatting via Intl.NumberFormat API and persistent data via Browser LocalStorage.</p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Intl API</span><span>LocalStorage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sairajmahadikgithub.github.io/Smart-Expense-Tracker/" target="_blank" class="btn-live-center"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <img src="image/chat.png" alt="Real-Time Chat Platform" />
+            <div class="project-overlay"><span class="project-category">Web App</span></div>
+          </div>
+          <div class="project-body">
+            <h3>Real-Time Chat Platform</h3>
+            <p>Secure team chat platform for real-time communication with user authentication for privacy and security. Built for seamless team collaboration.</p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>Auth</span>
+            </div>
+            <div class="project-links">
+              <span class="btn-live-center btn-no-link"><i class="fas fa-ban"></i> No Live Demo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+  <div class="project-img">
+    <img src="image/task.png" alt="Taskmaster To-Do App" />
+    <div class="project-overlay">
+      <span class="project-category">Web App</span>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <h3>Taskmaster - To-Do List App</h3>
+
+    <p>
+      A simple and interactive To-Do List application that allows users to manage daily tasks efficiently.
+      Designed with a clean UI and smooth user experience.
+    </p>
+
+    <div class="tech-stack">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>LocalStorage</span>
+    </div>
+
+    <div class="project-links">
+      <a href="https://sairajmahadikgithub.github.io/Taskmaster/" target="_blank" class="btn-live-center">
+        <i class="fas fa-external-link-alt"></i> Live Demo
+      </a>
+    </div>
+  </div>
+</div>
+
+        <!-- AI Expense Tracker -->
+        <div class="project-card reveal ai-project-card" data-category="ai">
+          <div class="project-img">
+            <img src="image/aip.png" alt="Smart Expense Tracker with AI" />
+            <div class="project-overlay"><span class="project-category">AI + Web App</span></div>
+            <div class="ai-project-badge"><i class="fas fa-robot"></i> Gemini AI</div>
+          </div>
+          <div class="project-body">
+            <h3>Smart Expense Tracker <span class="ai-title-tag">+ AI</span></h3>
+            <p>AI-powered expense tracker with category-wise budgeting, real-time alerts, pie chart analytics, and an AI chatbot using Google Gemini for intelligent spending advice.</p>
+            <div class="tech-stack">
+              <span>PHP</span><span>MySQL</span><span>Python</span><span>Gemini AI</span><span>Chart.js</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <span class="btn-live-center btn-no-link"><i class="fas fa-ban"></i> No Live Demo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// skills</span>
+        <h2>Tech Stack</h2>
+        <p>Technologies I work with</p>
+      </div>
+      <div class="skills-container">
+        <div class="skills-category reveal">
+          <h3><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>C++</span><div class="bar"><div class="bar-fill" data-width="82"></div></div><span class="pct">82%</span></div>
+            <div class="skill-bar"><span>Python</span><div class="bar"><div class="bar-fill" data-width="80"></div></div><span class="pct">80%</span></div>
+            <div class="skill-bar"><span>JavaScript</span><div class="bar"><div class="bar-fill" data-width="85"></div></div><span class="pct">85%</span></div>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <h3><i class="fas fa-globe"></i> Web Development</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>HTML5</span><div class="bar"><div class="bar-fill" data-width="90"></div></div><span class="pct">90%</span></div>
+            <div class="skill-bar"><span>CSS3</span><div class="bar"><div class="bar-fill" data-width="88"></div></div><span class="pct">88%</span></div>
+            <div class="skill-bar"><span>JavaScript (DOM/APIs)</span><div class="bar"><div class="bar-fill" data-width="85"></div></div><span class="pct">85%</span></div>
+            <div class="skill-bar"><span>PHP</span><div class="bar"><div class="bar-fill" data-width="70"></div></div><span class="pct">70%</span></div>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <h3><i class="fas fa-database"></i> Database & Other</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>SQL / DBMS / RDBMS</span><div class="bar"><div class="bar-fill" data-width="83"></div></div><span class="pct">83%</span></div>
+            <div class="skill-bar"><span>MS Office / Documentation</span><div class="bar"><div class="bar-fill" data-width="88"></div></div><span class="pct">88%</span></div>
+            <div class="skill-bar"><span>English Typing (40 WPM)</span><div class="bar"><div class="bar-fill" data-width="75"></div></div><span class="pct">75%</span></div>
+          </div>
+        </div>
+        <div class="skills-category reveal ai-creative-card">
+          <h3><i class="fas fa-wand-magic-sparkles"></i> AI & Creative</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>Generative AI Content Creation</span><div class="bar"><div class="bar-fill" data-width="85"></div></div><span class="pct">85%</span></div>
+            <div class="skill-bar"><span>AI Graphic / Poster Design</span><div class="bar"><div class="bar-fill" data-width="82"></div></div><span class="pct">82%</span></div>
+            <div class="skill-bar"><span>Prompt Engineering</span><div class="bar"><div class="bar-fill" data-width="80"></div></div><span class="pct">80%</span></div>
+          </div>
+          <div class="ai-tools-row">
+            <span class="ai-tool-tag"><i class="fas fa-robot"></i> ChatGPT</span>
+            <span class="ai-tool-tag"><i class="fas fa-image"></i> Midjourney</span>
+            <span class="ai-tool-tag"><i class="fas fa-palette"></i> Canva AI</span>
+            <span class="ai-tool-tag"><i class="fas fa-star"></i> DALL·E</span>
+            <span class="ai-tool-tag"><i class="fas fa-brain"></i> Claude AI</span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-icons reveal">
+        <div class="tech-icon"><i class="fab fa-html5" style="color:#e34f26"></i><span>HTML5</span></div>
+        <div class="tech-icon"><i class="fab fa-css3-alt" style="color:#1572b6"></i><span>CSS3</span></div>
+        <div class="tech-icon"><i class="fab fa-js-square" style="color:#f7df1e"></i><span>JavaScript</span></div>
+        <div class="tech-icon"><i class="fab fa-python" style="color:#3776ab"></i><span>Python</span></div>
+        <div class="tech-icon"><i class="fas fa-database" style="color:#336791"></i><span>SQL</span></div>
+        <div class="tech-icon"><i class="fab fa-php" style="color:#777bb4"></i><span>PHP</span></div>
+        <div class="tech-icon"><i class="fas fa-terminal" style="color:#43e97b"></i><span>C++</span></div>
+        <div class="tech-icon"><i class="fab fa-git-alt" style="color:#f05032"></i><span>Git</span></div>
+        <div class="tech-icon ai-glow"><i class="fas fa-wand-magic-sparkles" style="color:#a855f7"></i><span>Gen AI</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Graphic Design Section -->
+  <section id="design" class="section">
+    <div class="container">
+      <div class="design-section-header reveal">
+        <div class="design-header-bg">
+          <div class="design-orb orb1"></div>
+          <div class="design-orb orb2"></div>
+          <div class="design-orb orb3"></div>
+        </div>
+        <div class="design-header-content">
+          <h2 class="design-main-title">
+            <span class="design-title-line1">
+              <span class="word-animate" style="--d:0s">AI</span>
+              <span class="word-animate" style="--d:0.15s">Generated</span>
+            </span>
+            <span class="design-title-line2">
+              <span class="word-animate" style="--d:0.3s">Creative</span>
+              <span class="word-animate" style="--d:0.45s">Work</span>
+            </span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="design-grid" id="designGrid">
+
+        <div class="design-card reveal" onclick="openDesign('image/p1.png')">
+          <div class="design-thumb">
+            <img src="image/p1.png" alt="AI Generated Artwork" />
+            <div class="design-overlay"><div class="design-overlay-content"><i class="fas fa-expand-alt"></i><span>View Full</span></div></div>
+          </div>
+          <div class="design-info"><h4>AI Generated Artwork</h4><span class="design-tag">ChatGPT</span></div>
+        </div>
+
+       
+      </div>
+    </div>
+  </section>
+  <!-- Design Lightbox Modal -->
+  <div class="design-modal" id="designModal" onclick="closeDesign()">
+    <div class="design-modal-inner" onclick="event.stopPropagation()">
+      <button class="design-modal-close" onclick="closeDesign()"><i class="fas fa-times"></i></button>
+      <img id="designModalImg" src="" alt="Design" />
+      <div class="design-modal-info">
+        <h3 id="designModalTitle"></h3>
+        <span id="designModalSub"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// certificates</span>
+        <h2>Certifications</h2>
+        <p>Verified credentials from top platforms</p>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal" onclick="openCert('image/sm.png','Software Engineer Intern','HackerRank · 2025')">
+          <div class="cert-img"><img src="image/sm.png" alt="Software Engineer Intern" /><div class="cert-zoom"><i class="fas fa-expand"></i></div></div>
+          <div class="cert-info"><h4>Software Engineer Intern</h4><span><i class="fas fa-code"></i> HackerRank · 2025</span></div>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCert('image/sql.png','SQL Advanced Certificate','HackerRank · 2025')">
+          <div class="cert-img"><img src="image/sql.png" alt="SQL Advanced" /><div class="cert-zoom"><i class="fas fa-expand"></i></div></div>
+          <div class="cert-info"><h4>SQL Advanced Certificate</h4><span><i class="fas fa-database"></i> HackerRank · 2025</span></div>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCert('image/python.png','Python Certificate','HackerRank · 2025')">
+          <div class="cert-img"><img src="image/python.png" alt="Python" /><div class="cert-zoom"><i class="fas fa-expand"></i></div></div>
+          <div class="cert-info"><h4>Python Certificate</h4><span><i class="fab fa-python"></i> HackerRank · 2025</span></div>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCert('image/js.png','Fundamentals of JavaScript','HackerRank · 2025')">
+          <div class="cert-img"><img src="image/js.png" alt="JavaScript" /><div class="cert-zoom"><i class="fas fa-expand"></i></div></div>
+          <div class="cert-info"><h4>Fundamentals of JavaScript</h4><span><i class="fab fa-js"></i> HackerRank · 2025</span></div>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCert('image/LinkedIn Learning.jpg','Career Skills in Software Dev','LinkedIn Learning · 2024')">
+          <div class="cert-img"><img src="image/LinkedIn Learning.jpg" alt="LinkedIn Learning" /><div class="cert-zoom"><i class="fas fa-expand"></i></div></div>
+          <div class="cert-info"><h4>Career Skills in Software Dev</h4><span><i class="fab fa-linkedin"></i> LinkedIn Learning · 2024</span></div>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCert('image/css.jpg','Front-End Development CSS','Great Learning · 2022')">
+          <div class="cert-img"><img src="image/css.jpg" alt="CSS Course" /><div class="cert-zoom"><i class="fas fa-expand"></i></div></div>
+          <div class="cert-info"><h4>Front-End Development — CSS</h4><span><i class="fab fa-css3-alt"></i> Great Learning · 2022</span></div>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCert('image/dgmarketeing.jpg','Digital Marketing Course','Google Digital Garage · 2022')">
+          <div class="cert-img"><img src="image/dgmarketeing.jpg" alt="Digital Marketing" /><div class="cert-zoom"><i class="fas fa-expand"></i></div></div>
+          <div class="cert-info"><h4>Digital Marketing Course</h4><span><i class="fab fa-google"></i> Google Digital Garage · 2022</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div class="cert-modal" id="certModal" onclick="closeCert()">
+    <div class="cert-modal-content" onclick="event.stopPropagation()">
+      <button class="cert-modal-close" onclick="closeCert()"><i class="fas fa-times"></i></button>
+      <img id="certModalImg" src="" alt="Certificate" />
+      <div class="cert-modal-info">
+        <h3 id="certModalTitle"></h3>
+        <span id="certModalPlatform"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Awards Section -->
+  <section id="awards" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// awards</span>
+        <h2>Achievements</h2>
+        <p>Competitions and recognitions I've earned</p>
+      </div>
+      <div class="awards-grid">
+
+        <div class="award-card reveal">
+          <div class="award-icon"><i class="fas fa-trophy"></i></div>
+          <div class="award-badge second">2nd Place</div>
+          <h3>Business Idea Presentation</h3>
+          <p>Presented an innovative and well-researched business concept at DGCC College, Satara.</p>
+          <div class="award-meta"><span><i class="fas fa-university"></i> DGCC College, Satara</span><span><i class="fas fa-calendar"></i> 2023</span></div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-icon"><i class="fas fa-medal"></i></div>
+          <div class="award-badge third">3rd Place</div>
+          <h3>C/C++ Coding Competition</h3>
+          <p>Demonstrated strong coding skills and problem-solving abilities in C/C++ programming.</p>
+          <div class="award-meta"><span><i class="fas fa-university"></i> DGCC College, Satara</span><span><i class="fas fa-calendar"></i> 2022</span></div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-icon"><i class="fas fa-award"></i></div>
+          <div class="award-badge runner">Runner-Up</div>
+          <h3>C/C++ Coding Competition</h3>
+          <p>Showcased advanced coding proficiency and logic implementation at inter-college level.</p>
+          <div class="award-meta"><span><i class="fas fa-university"></i> KBP College, Satara</span><span><i class="fas fa-calendar"></i> 2023</span></div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-icon"><i class="fas fa-star"></i></div>
+          <div class="award-badge participant">Participant</div>
+          <h3>CodeQuezt — DSA Contest</h3>
+          <p>Participated in the CodeQuezt Contest focused on Data Structures and Algorithms, enhancing technical skills.</p>
+          <div class="award-meta"><span><i class="fas fa-laptop-code"></i> Naukri Campus</span><span><i class="fas fa-calendar"></i> 2024</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// contact</span>
+        <h2>Let's Talk</h2>
+        <p>Have an opportunity or just want to say hi?</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Get In Touch</h3>
+          <p>I'm actively looking for full-time roles and internships. Whether you're from Google, Microsoft, a startup, or anywhere in between — let's connect and build something great.</p>
+          <div class="contact-items">
+            <div class="contact-item"><i class="fas fa-envelope"></i><span>sairajmahadik2003@gmail.com</span></div>
+            <div class="contact-item"><i class="fas fa-phone"></i><span>+91 9307293998</span></div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Satara, Maharashtra 415002</span></div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:sairajmahadik2003@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+            <button onclick="resetForm()">Send Another</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo"><span class="logo-bracket">&lt;</span>SPM<span class="logo-bracket">/&gt;</span></div>
+      <p>Built with <i class="fas fa-heart" style="color:#e74c3c"></i> by Sairaj Pratap Mahadik · 2025</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-rocket"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
